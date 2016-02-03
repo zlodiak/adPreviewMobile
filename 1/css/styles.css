@@ -55,11 +55,6 @@ textarea{
   display: none;
 }
 
-.wrapped{
-  width: 1000px;
-  margin: 0 auto;
-}
-
 input::-webkit-input-placeholder {
   color: #0096ef;
 }
@@ -70,4 +65,25 @@ input:-moz-placeholder {
 
 /********************************************************************************************* GLOBAL_layout */
 
-/********************************************************************************************* GLOBAL_blocks */
+/********************************************************************************************* header */
+.header{
+  background: #2c9ed5;
+  border-bottom: 1px solid #fff;
+}
+
+  .logo_area{
+
+  }
+
+    .log_img{
+
+    }
+
+  .day_news_area{
+    margin-left: 136px;
+    border-left: 1px solid #fff;
+  }
+
+    .day_news_label{
+
+    }
