@@ -16,7 +16,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, a, a img, p, ul, ol, li, span, fieldset
   margin: 0; 
   outline: none;  
   padding: 0;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 html{
@@ -163,30 +163,24 @@ input:-moz-placeholder {
 }
 
 /********************************************************************************************* news_main */
-/* 667 horiz iphone6 */  
 .news_main{
   position: relative;
   background: #3fae49;
-  overflow: hidden;
 }
 
   .teaser_area{
     padding: 16px 144px 0 16px;  
     position: relative;
     z-index: 100;  
-    overflow: hidden;
 
     color: #fff;
-    font-family: 'PT Sans', sans-serif;        
-  }
+    font-family: 'PT Sans', sans-serif;        }
 
     .teaser_area .title{
       font-weight: bold;
       font-size: 22px;  
 
       margin-bottom: 8px;
-      overflow: hidden;
-      max-height: 28px;
     }
 
     .teaser_area .short_text{
@@ -194,21 +188,18 @@ input:-moz-placeholder {
       line-height: 18px;
 
       margin-bottom: 19px;
-      overflow: hidden;
-      max-height: 36px;
     }
 
     .teaser_area .more_button:after{
       position: absolute;
       z-index: 100;
-      right: -53px;
+      right: -8px;
       top: 0px;
       width: 16px;
-      height: 0px;
-      border: 21px solid transparent; 
-      border-left: 16px solid #fff; 
+      height: 42px;
+      background: red;
 
-      content: '';
+      content: '111';
     }
 
     .teaser_area .more_button{
@@ -216,14 +207,11 @@ input:-moz-placeholder {
       margin-bottom: 16px;
       height: 42px;
       position: relative;
-      display: block;
-      cursor: pointer;
 
       color: #3fae49;
       line-height: 42px;
       font-size: 15px; 
-      text-align: center;   
-      text-decoration: none;   
+      text-align: center;
     }
 
   .teaser_img_area{
@@ -234,108 +222,5 @@ input:-moz-placeholder {
     top: 0;
     right: 0;
     overflow: hidden;
+
   }      
-
-/* 568 horiz iphone5 */  
-@media (max-width: 568px) {
-  .teaser_area{
-    padding: 14px 105px 0 13px;  
-  }
-
-    .teaser_area .title{
-      font-size: 15px;  
-
-      margin-bottom: 3px;
-      max-height: 19px;
-    }  
-
-    .teaser_area .short_text{
-      font-size: 12px;
-      line-height: 16px;
-
-      margin-bottom: 10px;
-      max-height: 32px;
-    }    
-
-    .teaser_area .more_button:after{
-      right: -47px;
-      border: 15px solid transparent; 
-      border-left: 16px solid #fff; 
-    }
-
-    .teaser_area .more_button{
-      margin-bottom: 13px;
-      height: 30px;
-      position: relative;
-
-      line-height: 30px;
-      font-size: 15px;  
-    }
-
-  .teaser_img_area{
-    width: 105px;
-    min-height: 155px;
-  } 
-}
-
-/* 375 vert iphone6 */   
-@media (max-width: 375px) {
-  .teaser_area{
-    padding: 14px 123px 0 13px;  
-  }
-
-    .teaser_area .title{
-      font-size: 20px;
-      line-height: 24px;
-
-      margin-bottom: 7px;
-      max-height: 75px;
-    }  
-
-    .teaser_area .short_text{
-      display: none;
-    }    
-
-    .teaser_area .more_button:after{
-      right: -50px;
-      border: 18px solid transparent; 
-      border-left: 16px solid #fff; 
-    }
-
-    .teaser_area .more_button{
-      margin-bottom: 14px;
-      height: 36px;
-      position: relative;
-
-      line-height: 36px;
-      font-size: 15px;  
-    }
-
-  .teaser_img_area{
-    width: 123px;
-    min-height: 155px;
-  } 
-}
-
-/* 320 vert iphone5 */    
-@media (max-width: 320px) {
-  .teaser_area{
-    padding: 16px 123px 0 13px;  
-  }
-
-    .teaser_area .title{
-      font-size: 19px;
-      line-height: 23px;
-
-      margin-bottom: 9px;
-      max-height: 69px;
-    }  
-
-  .teaser_area .more_button {
-      margin-bottom: 14px;
-  }     
-
-  .teaser_img_area{
-    min-height: 150px;
-  }   
-}
