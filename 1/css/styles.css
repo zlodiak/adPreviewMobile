@@ -1,0 +1,73 @@
+/*
+INFO: 
+  project: adPreviewMobile
+  browsers: only mobile browsers
+  width: min 320px(iphone5 vertical)
+  columns: 1
+  markup: 
+  use: 
+  desc: simply adpreview
+  version 1
+*/  
+
+/********************************************************************************************** COMMON_STYLES */
+html, body, div, h1, h2, h3, h4, h5, h6, a, a img, p, ul, ol, li, span, fieldset , form, dl, dd, dt, table, tr, td, img{ 
+  border: none;
+  margin: 0; 
+  outline: none;  
+  padding: 0;
+  overflow: hidden;
+}
+
+html{
+  height:100%;  
+}
+
+body{ 
+  height:100%;  
+} 
+
+ul{
+  list-style-type: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus { outline: none; }
+
+textarea{
+  resize: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  zoom:1;
+}
+
+.clear{
+  clear: both;
+} 
+  
+.hide{
+  display: none;
+}
+
+.wrapped{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+input::-webkit-input-placeholder {
+  color: #0096ef;
+}
+
+input:-moz-placeholder {
+  color: #0096ef;
+}
+
+/********************************************************************************************* GLOBAL_layout */
+
+/********************************************************************************************* GLOBAL_blocks */
