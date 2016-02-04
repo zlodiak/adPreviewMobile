@@ -339,3 +339,115 @@ input:-moz-placeholder {
     min-height: 150px;
   }   
 }
+
+
+/********************************************************************************************* news */
+/* 667 horiz iphone6 */  
+.news{
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+
+  .news_teaser_area{
+    padding: 12px 144px 0 16px;  
+    position: relative;
+    z-index: 100;  
+    overflow: hidden;
+    border-top: 1px solid #f7f7f7;
+
+    color: #252525;
+    font-family: 'PT Sans', sans-serif;        
+  }
+
+    .news_title{
+      font-weight: bold;
+      font-size: 22px;  
+      line-height: 25px;
+
+      margin-bottom: 5px;
+      overflow: hidden;
+      max-height: 56px;
+    }
+
+    .news_short_text{
+      font-weight: normal;
+      line-height: 20px;
+      color: #545454;
+      font-size: 16px;
+
+      margin-bottom: 19px;
+      overflow: hidden;
+      max-height: 80px;
+    }
+
+  .news_teaser_img_area{
+    width: 144px;
+    min-height: 170px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+  } 
+
+/* 568 horiz iphone5 */    
+@media (max-width: 568px) {
+    .news_teaser_area{
+      padding: 9px 105px 0 16px;        
+    }
+
+      .news_title{
+        line-height: 16px;
+        font-size: 18px;  
+
+        margin-bottom: 5px;
+        max-height: 56px;
+      }
+
+      .news_short_text{
+        line-height: 15px;
+        font-size: 12px;
+
+        margin-bottom: 15px;
+        max-height: 46px;
+      }
+
+    .news_teaser_img_area{
+      width: 105px;
+      min-height: 114px;
+    }   
+}
+
+/* 375 vert iphone6 */    
+@media (max-width: 375px) {
+    .news_teaser_area{
+      padding: 9px 123px 0 16px;        
+    }
+
+      .news_title{
+        line-height: 20px;
+        font-size: 15px;  
+
+        margin-bottom: 8px;
+        max-height: 60px;
+      }
+
+      .news_short_text{
+        line-height: 17px;
+        font-size: 14px;
+
+        margin-bottom: 15px;
+        max-height: 64px;
+      }
+
+    .news_teaser_img_area{
+      width: 123px;
+      min-height: 150px;
+    }   
+}
+
+/* 375 vert iphone6 */    
+@media (max-width: 375px) {
+
+}
