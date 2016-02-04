@@ -60,7 +60,7 @@
 
         <div class="news_teaser_img_area" style="background: url('uploads/img2.png') center center no-repeat; background-size: cover;"></div>
       </div>
-      
+
     </div>
 
     <!-- jquery -->
@@ -68,11 +68,32 @@
 
     <!-- autoellipsis -->
     <script src="js/autoellipsis/autoellipsis.js"></script>
+
     <script>
       $(document).ready(function() {
-        $('.news_main_title, .news_main_short_text').ellipsis();
-        $('.news_title, .news_short_text').ellipsis();
+        // auto height main_news img
+        var mainNewsHeight = $('.news_main').height();
+        $('.news_main_teaser_img_area').css({
+          minHeight: (mainNewsHeight + 10) + 'px'
+        });
+
+        // auto height news imgs
+        var newsArr = $('.news');
+        newsArr.each(function(i) {
+          var heightNewsContainer = $(this).height(), 
+              imgElement = $(this).find('.news_teaser_img_area');
+
+          imgElement.css({
+            minHeight: (heightNewsContainer + 10) + 'px'
+          });
+        });
+
+        // autoellipsis
+        $(document).ready(function() {
+          $('.news_main_title, .news_main_short_text').ellipsis();
+          $('.news_title, .news_short_text').ellipsis();
+        });        
       });
-    </script>    
+    </script>       
   </body>
 </html>

@@ -350,7 +350,7 @@ input:-moz-placeholder {
 }
 
   .news_teaser_area{
-    padding: 12px 144px 0 16px;  
+    padding: 12px 154px 0 16px;  
     position: relative;
     z-index: 100;  
     overflow: hidden;
@@ -394,7 +394,7 @@ input:-moz-placeholder {
 /* 568 horiz iphone5 */    
 @media (max-width: 568px) {
     .news_teaser_area{
-      padding: 9px 105px 0 16px;        
+      padding: 9px 115px 0 16px;        
     }
 
       .news_title{
@@ -422,7 +422,7 @@ input:-moz-placeholder {
 /* 375 vert iphone6 */    
 @media (max-width: 375px) {
     .news_teaser_area{
-      padding: 9px 123px 0 16px;        
+      padding: 9px 143px 0 16px;        
     }
 
       .news_title{
