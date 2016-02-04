@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/styles.css" /> 
   </head>
   
-   <body style="width: 320px;">
+  <!-- <body style="width: 320px;"> -->
   <!-- <body style="width: 375px;"> -->
   <!-- <body style="width: 568px;"> -->
-  <!-- <body style="width: 667px;"> -->
+  <body style="width: 667px;">
   <!-- <body> -->
     <header class="header">
       <a class="logo_area" href="#"><img class="logo" src="images/logo.png" alt="" /></a>
@@ -26,7 +26,7 @@
     <div class="news_main">
       <div class="teaser_area">
         <div class="title">10 самых привлекательных актрис 90-х (фото)</div>
-        <div class="short_text">В 90-е годы с экранов телевизоров на нас стали смотреть привлекательные зарубежные актрисы из западных фильмов...</div>
+        <div class="short_text">В 90-е годы с экранов телевизоров на нас стали смотреть привлекательные зарубежные актрисы из западных фильмов прокладка трубопровода начата в апреле 2010 года. В сентябре 2011 года начато заполнение технологическим газом первой из двух ниток.</div>
         <a class="more_button" href="#">Читать далее</a>
       </div>
 
@@ -34,5 +34,17 @@
     </div>
 
     <div class="news_tape"></div>
+
+    <!-- jquery -->
+    <script src='js/jquery/jquery.2.min.js'></script>    
+
+    <!-- autoellipsis -->
+    <script src="js/autoellipsis/autoellipsis.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.title').ellipsis();
+        $('.short_text').ellipsis();
+      });
+    </script>    
   </body>
 </html>
